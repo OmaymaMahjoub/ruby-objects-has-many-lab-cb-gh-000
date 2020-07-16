@@ -13,12 +13,14 @@ class Post
 
   attr_accessor :title, :author
 
-  def auther_name
+  def author_name
+
     if author!=nil
-      return author.name
+      author.name
     else
-      return nil
+      nil
     end
+
   end
 
 end
