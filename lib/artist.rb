@@ -26,8 +26,12 @@ class Artist
     s.artist=self
   end
 
-  def self.song_count
-    @@songs.size
+  def song_count
+    arr=Song.all
+    arr1=arr.collect do |s|
+      s.artist
+    end
+    return arr1.count(self)
   end
 
 end
