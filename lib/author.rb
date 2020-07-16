@@ -11,6 +11,7 @@ class Author
     arr.collect do |s|
       if s.author==self
         s
+      end
     end
   end
 
