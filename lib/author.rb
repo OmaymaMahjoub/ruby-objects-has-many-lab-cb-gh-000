@@ -13,6 +13,6 @@ class Author
         s
     end
   end
-    
+
 
 end
