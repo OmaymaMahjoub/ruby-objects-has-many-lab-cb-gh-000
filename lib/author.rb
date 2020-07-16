@@ -14,5 +14,17 @@ class Author
     end
   end
 
+  def add_post(post)
+    post.author=self    
+  end
+
+  def add_post_by_title(title)
+    p=Post.new(title)
+    p.author=self
+  end
+
+  def self.post_cont
+    Post.all.size
+  end
 
 end
