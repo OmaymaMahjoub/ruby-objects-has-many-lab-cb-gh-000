@@ -17,8 +17,8 @@ class Artist
     return arr1
   end
 
-  def self.add_song(song)
-    @@songs.push(song)
+  def add_song(song)
+    song.artist=self
   end
 
   def self.add_song_by_name(name)
