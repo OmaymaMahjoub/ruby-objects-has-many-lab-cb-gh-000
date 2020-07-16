@@ -1,6 +1,6 @@
 class Artist
 
-  @@songs=[]
+  @@songs=Array.new
 
   def initialize (name)
     @name=name
