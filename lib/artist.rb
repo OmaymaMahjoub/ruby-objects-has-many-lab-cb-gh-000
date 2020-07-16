@@ -12,7 +12,7 @@ class Artist
     @@songs.push(song)
   end
 
-  def self.add_song_by_name(name)
+  def add_song_by_name(name)
     s=Song.new(name)
     s.artist=Artist
   end
