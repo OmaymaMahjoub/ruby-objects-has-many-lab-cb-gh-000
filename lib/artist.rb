@@ -8,13 +8,16 @@ class Artist
 
   attr_accessor :name
 
+  def self.songs
+    @@songs
+  end
+
   def self.add_song(song)
     @@songs.push(song)
   end
 
-  def add_song_by_name(name)
-    s=Song.new(name)
-    s.artist=Artist
+  def self.add_song_by_name(name)
+    @@songs<<Song.new(name)
   end
 
   def self.song_count
