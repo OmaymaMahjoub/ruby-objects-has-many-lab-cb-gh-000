@@ -13,4 +13,8 @@ class Song
 
   attr_accessor :name, :artist
 
+  def artist_name
+    artist.name
+  end
+
 end
