@@ -1,15 +1,20 @@
 class Artist
 
-  @@songs=Array.new
-
   def initialize (name)
     @name=name
   end
 
   attr_accessor :name
 
-  def self.songs
-    @@songs
+  def songs
+    arr=Song.all
+    arr1=Array.new
+    arr.each do |s|
+      if s.artist==self
+        arr1<<s
+      end
+    end
+    return arr1
   end
 
   def self.add_song(song)
